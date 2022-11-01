@@ -10,9 +10,19 @@
 		B5B513A8291197200045432F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513A7291197200045432F /* AppDelegate.swift */; };
 		B5B513AA291197200045432F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513A9291197200045432F /* SceneDelegate.swift */; };
 		B5B513AC291197200045432F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513AB291197200045432F /* ViewController.swift */; };
-		B5B513AF291197200045432F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B513AD291197200045432F /* Main.storyboard */; };
 		B5B513B1291197210045432F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B513B0291197210045432F /* Assets.xcassets */; };
 		B5B513B4291197210045432F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B513B2291197210045432F /* LaunchScreen.storyboard */; };
+		B5B513BD29119D0E0045432F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5B513BF29119D0E0045432F /* Localizable.strings */; };
+		B5B513C329119E520045432F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513C229119E520045432F /* Resources.swift */; };
+		B5B513C629119E910045432F /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513C529119E910045432F /* UIColor+ext.swift */; };
+		B5B513C829119EAB0045432F /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513C729119EAB0045432F /* String+ext.swift */; };
+		B5B513CE2911A14D0045432F /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513CD2911A14D0045432F /* TopView.swift */; };
+		B5B513D02911A1640045432F /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513CF2911A1640045432F /* ResultView.swift */; };
+		B5B513D22911A1840045432F /* SumCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513D12911A1840045432F /* SumCheckView.swift */; };
+		B5B513D42911A1A20045432F /* PersonsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513D32911A1A20045432F /* PersonsCountView.swift */; };
+		B5B513D62911A1BD0045432F /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513D52911A1BD0045432F /* TipsView.swift */; };
+		B5B513D82911A1D40045432F /* CalculaiteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513D72911A1D40045432F /* CalculaiteButtonView.swift */; };
+		B5B513DB2911A1F90045432F /* TipsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B513DA2911A1F90045432F /* TipsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +30,21 @@
 		B5B513A7291197200045432F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B513A9291197200045432F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5B513AB291197200045432F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5B513AE291197200045432F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5B513B0291197210045432F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B513B3291197210045432F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5B513B5291197210045432F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5B513BE29119D0E0045432F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B5B513C029119D6F0045432F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B5B513C229119E520045432F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		B5B513C529119E910045432F /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
+		B5B513C729119EAB0045432F /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
+		B5B513CD2911A14D0045432F /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		B5B513CF2911A1640045432F /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		B5B513D12911A1840045432F /* SumCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumCheckView.swift; sourceTree = "<group>"; };
+		B5B513D32911A1A20045432F /* PersonsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsCountView.swift; sourceTree = "<group>"; };
+		B5B513D52911A1BD0045432F /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		B5B513D72911A1D40045432F /* CalculaiteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaiteButtonView.swift; sourceTree = "<group>"; };
+		B5B513DA2911A1F90045432F /* TipsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +77,65 @@
 		B5B513A6291197200045432F /* Split Bill */ = {
 			isa = PBXGroup;
 			children = (
-				B5B513A7291197200045432F /* AppDelegate.swift */,
-				B5B513A9291197200045432F /* SceneDelegate.swift */,
+				B5B513CC2911A1410045432F /* Views */,
+				B5B513C929119FDD0045432F /* App */,
 				B5B513AB291197200045432F /* ViewController.swift */,
-				B5B513AD291197200045432F /* Main.storyboard */,
 				B5B513B0291197210045432F /* Assets.xcassets */,
 				B5B513B2291197210045432F /* LaunchScreen.storyboard */,
 				B5B513B5291197210045432F /* Info.plist */,
+				B5B513C129119E3F0045432F /* Helpers */,
+				B5B513BF29119D0E0045432F /* Localizable.strings */,
 			);
 			path = "Split Bill";
+			sourceTree = "<group>";
+		};
+		B5B513C129119E3F0045432F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5B513C429119E870045432F /* Extansions */,
+				B5B513C229119E520045432F /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5B513C429119E870045432F /* Extansions */ = {
+			isa = PBXGroup;
+			children = (
+				B5B513C529119E910045432F /* UIColor+ext.swift */,
+				B5B513C729119EAB0045432F /* String+ext.swift */,
+			);
+			path = Extansions;
+			sourceTree = "<group>";
+		};
+		B5B513C929119FDD0045432F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B5B513A7291197200045432F /* AppDelegate.swift */,
+				B5B513A9291197200045432F /* SceneDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		B5B513CC2911A1410045432F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5B513D92911A1EE0045432F /* Cell */,
+				B5B513CD2911A14D0045432F /* TopView.swift */,
+				B5B513CF2911A1640045432F /* ResultView.swift */,
+				B5B513D12911A1840045432F /* SumCheckView.swift */,
+				B5B513D32911A1A20045432F /* PersonsCountView.swift */,
+				B5B513D52911A1BD0045432F /* TipsView.swift */,
+				B5B513D72911A1D40045432F /* CalculaiteButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5B513D92911A1EE0045432F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B5B513DA2911A1F90045432F /* TipsCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = B5B5139B291197200045432F;
 			productRefGroup = B5B513A5291197200045432F /* Products */;
@@ -126,8 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B513B4291197210045432F /* LaunchScreen.storyboard in Resources */,
+				B5B513BD29119D0E0045432F /* Localizable.strings in Resources */,
 				B5B513B1291197210045432F /* Assets.xcassets in Resources */,
-				B5B513AF291197200045432F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +210,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B513CE2911A14D0045432F /* TopView.swift in Sources */,
+				B5B513D22911A1840045432F /* SumCheckView.swift in Sources */,
 				B5B513AC291197200045432F /* ViewController.swift in Sources */,
+				B5B513D82911A1D40045432F /* CalculaiteButtonView.swift in Sources */,
+				B5B513D42911A1A20045432F /* PersonsCountView.swift in Sources */,
+				B5B513C329119E520045432F /* Resources.swift in Sources */,
+				B5B513D62911A1BD0045432F /* TipsView.swift in Sources */,
 				B5B513A8291197200045432F /* AppDelegate.swift in Sources */,
+				B5B513DB2911A1F90045432F /* TipsCollectionViewCell.swift in Sources */,
 				B5B513AA291197200045432F /* SceneDelegate.swift in Sources */,
+				B5B513D02911A1640045432F /* ResultView.swift in Sources */,
+				B5B513C829119EAB0045432F /* String+ext.swift in Sources */,
+				B5B513C629119E910045432F /* UIColor+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5B513AD291197200045432F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5B513AE291197200045432F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5B513B2291197210045432F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B5B513B3291197210045432F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5B513BF29119D0E0045432F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5B513BE29119D0E0045432F /* en */,
+				B5B513C029119D6F0045432F /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -230,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -292,7 +377,7 @@
 				INFOPLIST_FILE = "Split Bill/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +405,7 @@
 				INFOPLIST_FILE = "Split Bill/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
