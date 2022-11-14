@@ -1,6 +1,6 @@
 //
 //  UIColor+ext.swift
-//  Split Bill
+//  Sawing friendly Bill
 //
 //  Created by Алексей Попроцкий on 01.11.2022.
 //

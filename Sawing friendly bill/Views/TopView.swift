@@ -1,6 +1,6 @@
 //
 //  TopView.swift
-//  Split Bill
+//  Sawing friendly Bill
 //
 //  Created by Алексей Попроцкий on 01.11.2022.
 //
@@ -13,7 +13,7 @@ class TopView: UIView {
 
     private let toplabel: UILabel = {
         let label = UILabel()
-        label.text = "S p l i t     B i l l".localized()
+        label.text = "Sawing friendly Bill".localized()
         label.font = Resources.Fonts.systemRegular(with: Resources.Size.topLabel)
         label.textColor = .lightGray
         label.translatesAutoresizingMaskIntoConstraints = false

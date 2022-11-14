@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B5B513A3291197200045432F"
-               BuildableName = "Split Bill.app"
-               BlueprintName = "Split Bill"
-               ReferencedContainer = "container:Split Bill.xcodeproj">
+               BuildableName = "Sawing friendly bill.app"
+               BlueprintName = "Sawing friendly bill"
+               ReferencedContainer = "container:Sawing friendly bill.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,7 +34,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = "ru"
+      language = "en"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5B513A3291197200045432F"
-            BuildableName = "Split Bill.app"
-            BlueprintName = "Split Bill"
-            ReferencedContainer = "container:Split Bill.xcodeproj">
+            BuildableName = "Sawing friendly bill.app"
+            BlueprintName = "Sawing friendly bill"
+            ReferencedContainer = "container:Sawing friendly bill.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B5B513A3291197200045432F"
-            BuildableName = "Split Bill.app"
-            BlueprintName = "Split Bill"
-            ReferencedContainer = "container:Split Bill.xcodeproj">
+            BuildableName = "Sawing friendly bill.app"
+            BlueprintName = "Sawing friendly bill"
+            ReferencedContainer = "container:Sawing friendly bill.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

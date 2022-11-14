@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5B513A4291197200045432F /* Split Bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Split Bill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5B513A4291197200045432F /* Sawing friendly bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sawing friendly bill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B513A7291197200045432F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5B513A9291197200045432F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5B513AB291197200045432F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		B5B5139B291197200045432F = {
 			isa = PBXGroup;
 			children = (
-				B5B513A6291197200045432F /* Split Bill */,
+				B5B513A6291197200045432F /* Sawing friendly bill */,
 				B5B513A5291197200045432F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,12 +69,12 @@
 		B5B513A5291197200045432F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5B513A4291197200045432F /* Split Bill.app */,
+				B5B513A4291197200045432F /* Sawing friendly bill.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B5B513A6291197200045432F /* Split Bill */ = {
+		B5B513A6291197200045432F /* Sawing friendly bill */ = {
 			isa = PBXGroup;
 			children = (
 				B5B513CC2911A1410045432F /* Views */,
@@ -86,7 +86,7 @@
 				B5B513C129119E3F0045432F /* Helpers */,
 				B5B513BF29119D0E0045432F /* Localizable.strings */,
 			);
-			path = "Split Bill";
+			path = "Sawing friendly bill";
 			sourceTree = "<group>";
 		};
 		B5B513C129119E3F0045432F /* Helpers */ = {
@@ -141,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B5B513A3291197200045432F /* Split Bill */ = {
+		B5B513A3291197200045432F /* Sawing friendly bill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5B513B8291197210045432F /* Build configuration list for PBXNativeTarget "Split Bill" */;
+			buildConfigurationList = B5B513B8291197210045432F /* Build configuration list for PBXNativeTarget "Sawing friendly bill" */;
 			buildPhases = (
 				B5B513A0291197200045432F /* Sources */,
 				B5B513A1291197200045432F /* Frameworks */,
@@ -153,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = "Split Bill";
+			name = "Sawing friendly bill";
 			productName = "Split Bill";
-			productReference = B5B513A4291197200045432F /* Split Bill.app */;
+			productReference = B5B513A4291197200045432F /* Sawing friendly bill.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B5B5139F291197200045432F /* Build configuration list for PBXProject "Split Bill" */;
+			buildConfigurationList = B5B5139F291197200045432F /* Build configuration list for PBXProject "Sawing friendly bill" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B5B513A3291197200045432F /* Split Bill */,
+				B5B513A3291197200045432F /* Sawing friendly bill */,
 			);
 		};
 /* End PBXProject section */
@@ -370,23 +370,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 37FQQ4WXUX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Split Bill/Info.plist";
+				INFOPLIST_FILE = "Sawing friendly bill/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sawing Bill";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alexei.poprotskii.Split-Bill";
+				PRODUCT_BUNDLE_IDENTIFIER = "alexei.poprotskii.Sawing-friendly-bill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sawing-friendly-bill";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,23 +402,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 37FQQ4WXUX;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Split Bill/Info.plist";
+				INFOPLIST_FILE = "Sawing friendly bill/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sawing Bill";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "alexei.poprotskii.Split-Bill";
+				PRODUCT_BUNDLE_IDENTIFIER = "alexei.poprotskii.Sawing-friendly-bill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Sawing-friendly-bill";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,7 +432,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B5B5139F291197200045432F /* Build configuration list for PBXProject "Split Bill" */ = {
+		B5B5139F291197200045432F /* Build configuration list for PBXProject "Sawing friendly bill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B513B6291197210045432F /* Debug */,
@@ -433,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5B513B8291197210045432F /* Build configuration list for PBXNativeTarget "Split Bill" */ = {
+		B5B513B8291197210045432F /* Build configuration list for PBXNativeTarget "Sawing friendly bill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B5B513B9291197210045432F /* Debug */,

@@ -1,13 +1,13 @@
 /* 
   Localizable.strings
-  Split Bill
+  Sawing friendly Bill
 
   Created by Алексей Попроцкий on 01.11.2022.
   
 */
 
 
-"S p l i t     B i l l" = "Р а з д е л и т ь     С ч е т";
+"Sawing friendly Bill" = "Разделить  дружеский  Счет";
 "per person" = "на человека";
 "E n t e r    t o t a l    b i l l" = "В в е д и т е    с у м м у    ч е к а";
 "Calculate" = "Посчитать";

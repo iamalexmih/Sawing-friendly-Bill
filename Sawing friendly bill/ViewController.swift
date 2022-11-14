@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Split Bill
+//  Sawing friendly Bill
 //
 //  Created by Алексей Попроцкий on 01.11.2022.
 //
@@ -31,13 +31,29 @@ class ViewController: UIViewController {
     
     @objc func calculateButtonPress() {
         guard let sumCheckCount = sumCheckView.textFieldSumCheck.text,
-                let sumCheckCountInt = Double(sumCheckCount)
-        else { return }
+              let sumCheckCountInt = Double(sumCheckCount),
+              sumCheckCountInt < Double(Int.max)
+        else {
+            UIView.transition(with: resultView,
+                              duration: 0.3,
+                              options: .transitionCrossDissolve) {
+                self.resultView.topLabel.text = "Введите корректное число"
+                self.resultView.bottomLabel.isHidden = true
+                
+            }
+            return
+        }
         
         let sum = sumCheckCountInt + sumCheckCountInt*tipsView.selectedTips / 100
         let persons = Double(personsCountView.countPerson)
         let result = Int(sum / persons)
-        resultView.topLabel.text = "\(result)"
+        
+        UIView.transition(with: resultView,
+                          duration: 0.3,
+                          options: .transitionCrossDissolve) {
+            self.resultView.topLabel.text = "\(result)"
+            self.resultView.bottomLabel.isHidden = false
+        }
     }
 
     

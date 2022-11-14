@@ -1,6 +1,6 @@
 //
 //  ResultView.swift
-//  Split Bill
+//  Sawing friendly Bill
 //
 //  Created by Алексей Попроцкий on 01.11.2022.
 //
@@ -17,13 +17,15 @@ class ResultView: UIView {
         label.textAlignment = .center
         label.font = Resources.Fonts.systemBold(with: Resources.Size.topLabelResult)
         label.textColor = Resources.Colors.gray
+        label.adjustsFontSizeToFitWidth = true
+        label.numberOfLines = 2
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
     }()
 
     
-    private let bottomLabel: UILabel = {
+    let bottomLabel: UILabel = {
         let label = UILabel()
         label.text = "per person".localized()
         label.textAlignment = .center
@@ -61,8 +63,8 @@ class ResultView: UIView {
     private func setupConstraints() {
         
         topLabel.topAnchor.constraint(equalTo: topAnchor, constant: Resources.Size.spaceMinPadding).isActive = true
-        topLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        topLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        topLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Size.spaceMinPadding*2).isActive = true
+        topLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Size.spaceMinPadding*2).isActive = true
         topLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         bottomLabel.topAnchor.constraint(equalTo: topLabel.bottomAnchor, constant: Resources.Size.spaceMinPadding).isActive = true
