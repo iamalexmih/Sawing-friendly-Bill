@@ -28,7 +28,6 @@ enum Resources {
     
     enum Fonts {
         static func systemRegular(with size: CGFloat) -> UIFont {
-            //UIFont(name: "Helvetica", size: size) ?? UIFont()
             UIFont.systemFont(ofSize: size)
         }
         static func systemBold(with size: CGFloat) -> UIFont {

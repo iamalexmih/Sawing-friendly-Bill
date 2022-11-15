@@ -43,6 +43,7 @@ class TipsView: UIView {
         setupDelegate()
     }
     
+    
     //MARK: - Setup func
     
     private func setupView() {
@@ -91,7 +92,7 @@ extension TipsView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        4
+        tipsArray.count
     }
     
     

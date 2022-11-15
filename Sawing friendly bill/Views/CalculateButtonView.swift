@@ -1,5 +1,5 @@
 //
-//  CalculaiteButtonView.swift
+//  CalculateButtonView.swift
 //  Sawing friendly Bill
 //
 //  Created by Алексей Попроцкий on 01.11.2022.
@@ -11,7 +11,7 @@ import UIKit
 
 class CalculateButtonView: UIView {
 
-    private var calculateButton: UIButton = {
+     lazy var calculateButton: UIButton = {
         let button = UIButton(type: .system)
         button.titleLabel?.font = Resources.Fonts.systemBold(with: 30)
         button.tintColor = .white
@@ -20,11 +20,11 @@ class CalculateButtonView: UIView {
         button.setTitle("Calculate".localized(), for: .normal)
         button.layer.cornerRadius = Resources.Size.cornerRadiusContent
         button.clipsToBounds = true
-        button.addTarget(self, action: #selector(ViewController.calculateButtonPress), for: .touchUpInside)
         
         return button
     }()
 
+    
     
     //MARK: - Init
     
@@ -35,6 +35,7 @@ class CalculateButtonView: UIView {
         setConstraints()
     }
 
+    
     //MARK: - Setup func
     
     private func setupView() {

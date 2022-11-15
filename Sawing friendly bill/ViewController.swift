@@ -22,42 +22,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        calculateButtonView.calculateButton.addTarget(self, action: #selector(calculateButtonPress), for: .touchUpInside)
+        
         setupView()
         setupConstraints()
-        tapForHideKeyboard()
+        setupTapForHideKeyboard()
     }
-    
     
     
     @objc func calculateButtonPress() {
         guard let sumCheckCount = sumCheckView.textFieldSumCheck.text,
-              let sumCheckCountInt = Double(sumCheckCount),
-              sumCheckCountInt < Double(Int.max)
+              let sumCheckCountDouble = Double(sumCheckCount),
+              sumCheckCountDouble < Double(Int.max)
         else {
             UIView.transition(with: resultView,
                               duration: 0.3,
-                              options: .transitionCrossDissolve) {
-                self.resultView.topLabel.text = "Введите корректное число"
-                self.resultView.bottomLabel.isHidden = true
+                              options: .transitionCrossDissolve) { [weak self] in
+                self?.resultView.topLabel.text = "Введите корректное число"
+                self?.resultView.bottomLabel.isHidden = true
                 
             }
             return
         }
         
-        let sum = sumCheckCountInt + sumCheckCountInt*tipsView.selectedTips / 100
+        let sum = sumCheckCountDouble + sumCheckCountDouble * tipsView.selectedTips / 100
         let persons = Double(personsCountView.countPerson)
         let result = Int(sum / persons)
         
         UIView.transition(with: resultView,
                           duration: 0.3,
-                          options: .transitionCrossDissolve) {
-            self.resultView.topLabel.text = "\(result)"
-            self.resultView.bottomLabel.isHidden = false
+                          options: .transitionCrossDissolve) { [weak self] in
+            self?.resultView.topLabel.text = "\(result)"
+            self?.resultView.bottomLabel.isHidden = false
         }
     }
 
     
-    private func tapForHideKeyboard() {
+    private func setupTapForHideKeyboard() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)

@@ -13,7 +13,6 @@ class SumCheckView: UIView {
     
     let textFieldSumCheck: UITextField = {
         let textField = UITextField()
-        //textField.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.9529411765, blue: 0.9450980392, alpha: 1)
         textField.backgroundColor = Resources.Colors.orangeLight
         let placeholderText = "E n t e r    t o t a l    b i l l".localized()
         textField.textColor = Resources.Colors.orangeDark
