@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     private let resultView = ResultView()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +31,13 @@ class ViewController: UIViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        tipsView.setupSelectDefaultTips(item: 0, section: 0)
+    }
+    
+    
+    //MARK: - Button action
+
     @objc func calculateButtonPress() {
         guard let sumCheckCount = sumCheckView.textFieldSumCheck.text,
               let sumCheckCountDouble = Double(sumCheckCount),
@@ -38,9 +46,9 @@ class ViewController: UIViewController {
             UIView.transition(with: resultView,
                               duration: 0.3,
                               options: .transitionCrossDissolve) { [weak self] in
-                self?.resultView.topLabel.text = "Введите корректное число"
+                self?.resultView.topLabel.font = Resources.Fonts.systemBold(with: 30)
+                self?.resultView.topLabel.text = "Invalid number".localized()
                 self?.resultView.bottomLabel.isHidden = true
-                
             }
             return
         }
@@ -56,7 +64,9 @@ class ViewController: UIViewController {
             self?.resultView.bottomLabel.isHidden = false
         }
     }
-
+    
+    
+    //MARK: - Other func
     
     private func setupTapForHideKeyboard() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
@@ -69,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     
-    //MARK: - Setup func
+    //MARK: - Setup View func
 
     private func setupView() {
         view.backgroundColor = Resources.Colors.orangeBackground

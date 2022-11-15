@@ -43,7 +43,7 @@ class TipsCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    //MARK: - Setup func
+    //MARK: - Setup View and Constraints func
 
     private func setupView() {
         addSubview(labelCountTips)

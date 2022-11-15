@@ -36,6 +36,17 @@ class ResultView: UIView {
         return label
     }()
     
+    
+    let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 5
+        
+        return stackView
+    }()
+    
     //MARK: - Init
     
     override init(frame: CGRect) {
@@ -45,7 +56,7 @@ class ResultView: UIView {
         setupConstraints()
     }
     
-    //MARK: - Setup func
+    //MARK: - Setup View and Constraints func
     
     private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
@@ -55,22 +66,20 @@ class ResultView: UIView {
         layer.borderWidth = 2
         layer.borderColor = Resources.Colors.orangeDark.cgColor
         
-        addSubview(topLabel)
-        addSubview(bottomLabel)
+        
+        addSubview(stackView)
+        stackView.addArrangedSubview(topLabel)
+        stackView.addArrangedSubview(bottomLabel)
     }
     
     
     private func setupConstraints() {
         
-        topLabel.topAnchor.constraint(equalTo: topAnchor, constant: Resources.Size.spaceMinPadding).isActive = true
-        topLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Size.spaceMinPadding*2).isActive = true
-        topLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Size.spaceMinPadding*2).isActive = true
-        topLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        stackView.topAnchor.constraint(equalTo: topAnchor, constant: Resources.Size.spaceMinPadding).isActive = true
+        stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Resources.Size.spaceMinPadding*2).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -Resources.Size.spaceMinPadding*2).isActive = true
+        stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -Resources.Size.spaceMinPadding).isActive = true
         
-        bottomLabel.topAnchor.constraint(equalTo: topLabel.bottomAnchor, constant: Resources.Size.spaceMinPadding).isActive = true
-        bottomLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        bottomLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        bottomLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
     
     

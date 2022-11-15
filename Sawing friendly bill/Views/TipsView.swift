@@ -44,7 +44,12 @@ class TipsView: UIView {
     }
     
     
-    //MARK: - Setup func
+    func setupSelectDefaultTips(item: Int, section: Int) {
+        let zeroTips = IndexPath(item: item, section: section)
+        collectionViewForTips.selectItem(at: zeroTips, animated: false, scrollPosition: .centeredVertically)
+    }
+    
+    //MARK: - Setup View and Constraints func
     
     private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
@@ -103,8 +108,6 @@ extension TipsView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         }
         let labelTipsInt = Int(tipsArray[indexPath.row])
         cell.labelCountTips.text = "\(labelTipsInt)%"
-        let zeroTips = IndexPath(item: 0, section: 0)
-        collectionView.selectItem(at: zeroTips, animated: false, scrollPosition: [])
         
         return cell
     }

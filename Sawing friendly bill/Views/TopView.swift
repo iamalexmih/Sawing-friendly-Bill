@@ -40,7 +40,7 @@ class TopView: UIView {
         setupConstraints()
     }
     
-    //MARK: - Setup func
+    //MARK: - Setup View and Constraints func
     
     private func setupView() {
         translatesAutoresizingMaskIntoConstraints = false
